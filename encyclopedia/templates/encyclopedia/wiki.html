@@ -1,0 +1,28 @@
+{% extends "encyclopedia/layout.html" %}
+
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+{% block body %}
+
+
+{{content|safe}}
+
+
+<p><button type="button" class="btn btn-primary fixed-bottom" style="margin-left:300px; margin-bottom:50px;"><a href="/Edit/{{title}}" style="color: black;">Edit</a></button>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "encyclopedia/layout.html" %}
+{% block title %}
+Add your new entry here
+{% endblock %}
+{% block body %}
+<body>
+
+  <div class="container-fluid">
+    <h1> Add Entry</h1>
+    <form method="post">{% csrf_token %}
+  <input type="text"name="title" placeholder="TITLE">
+    <br>
+    <br>
+
+  <textarea type="text" name="content" placeholder="Content" style="background-color: skyblue;">
+
+
+    </textarea>
+    <br>
+    <button type="submit" name="button">Submit</button>
+    </form>
+    </div>
+    </body>
+  {% endblock %}

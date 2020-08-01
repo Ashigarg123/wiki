@@ -1,0 +1,10 @@
+{% extends "encyclopedia/layout.html" %}
+{% block title %}
+Error!
+{% endblock %}
+{% block body %}
+
+<h1> Oops! The page you requested, doesn't exist. </h1>
+<p> <a href="{% url 'index'%}"> Go back--> </a> Or else create a new entry here -> <a href="{% url 'create' %}"> Create</a> </p>
+
+{% endblock %}

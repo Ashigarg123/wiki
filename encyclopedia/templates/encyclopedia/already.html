@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Already exists
+{% endblock %}
+{% block body %}
+<body>
+  <h1>
+    The entry you tried to add already exists!
+    </h1>
+    <a href="{% url 'index'%}"> Go back--> </a> Or else create a new entry here -> <a href="{% url 'create' %}"> Create</a> 
+    </body>
+    {% endblock %}
